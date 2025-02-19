@@ -11,9 +11,11 @@
         p { font-size: 18px; max-width: 800px; margin: auto; line-height: 1.6; }
         img { border-radius: 50%; width: 150px; height: 150px; margin-top: 10px; }
         .container { width: 80%; margin: auto; text-align: center; }
-        .projects { margin-top: 30px; }
-        .projects a { display: block; margin: 10px 0; font-size: 18px; text-decoration: none; color: #0066cc; }
-        .projects a:hover { text-decoration: underline; }
+        .projects { margin-top: 30px; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .project-card { width: 250px; text-align: center; }
+        .project-card img { width: 100%; height: auto; border-radius: 10px; transition: 0.3s; }
+        .project-card img:hover { transform: scale(1.05); }
+        .project-card a { text-decoration: none; color: #0066cc; font-size: 18px; font-weight: bold; display: block; margin-top: 10px; }
         hr { width: 60%; margin: 30px auto; border: 1px solid #ccc; }
         .github-link { margin-top: 40px; font-size: 18px; }
         .github-link a { text-decoration: none; color: #000; font-weight: bold; }
@@ -45,15 +47,24 @@
         <h2>Projects</h2>
         <hr>
         <div class="projects">
-            <a href="https://giovannilucente.github.io/portfolio/dynamic_game_trust_region_solver/index.html">
-                🔹 Dynamic Game Trust Region Solver
-            </a>
-            <a href="https://giovannilucente.github.io/portfolio/diffusion_model_trajectory_predictor/index.html">
-                🔹 Diffusion Model for Trajectory Prediction
-            </a>
-            <a href="https://giovannilucente.github.io/portfolio/LSTM_CNN_vehicle_speed_predictor/index.html">
-                🔹 LSTM-CNN Vehicle Longitudinal Motion Predictor
-            </a>
+            <div class="project-card">
+                <a href="https://giovannilucente.github.io/portfolio/dynamic_game_trust_region_solver/index.html">
+                    <img src="media/dynamic_game.jpg" alt="Dynamic Game Trust Region Solver">
+                    🔹 Dynamic Game Trust Region Solver
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="https://giovannilucente.github.io/portfolio/diffusion_model_trajectory_predictor/index.html">
+                    <img src="media/diffusion_model.jpg" alt="Diffusion Model for Trajectory Prediction">
+                    🔹 Diffusion Model for Trajectory Prediction
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="https://giovannilucente.github.io/portfolio/LSTM_CNN_vehicle_speed_predictor/index.html">
+                    <img src="media/lstm_cnn.jpg" alt="LSTM-CNN Vehicle Longitudinal Motion Predictor">
+                    🔹 LSTM-CNN Vehicle Longitudinal Motion Predictor
+                </a>
+            </div>
         </div>
 
         <div class="github-link">
