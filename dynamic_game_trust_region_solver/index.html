@@ -6,9 +6,12 @@
     <title>Dynamic Game Trust Region Solver</title>
     <style>
         body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
-        img { max-width: 80%; height: auto; margin: 20px 0; }
+        img { width: 200px; height: 150px; border-radius: 10px; object-fit: cover; margin: 10px; }
         video { max-width: 80%; margin: 20px 0; }
-        .container { width: 80%; margin: auto; text-align: left; }
+        .container { width: 80%; margin: auto; text-align: center; }
+        .scenarios { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+        .scenario { display: flex; flex-direction: column; align-items: center; }
+        .label { font-size: 16px; font-weight: bold; margin-top: 5px; }
     </style>
 </head>
 <body>
@@ -18,7 +21,7 @@
         <h2> Paper </h2>
         <p><strong>"DeepGame-TP: Integrating Dynamic Game Theory and Deep Learning for Trajectory Planning"</strong></p>
         <p><strong>Authors:</strong> Giovanni Lucente, Mikkel Skov Maarssoe, Sanath Himasekhar Konthala, Anas Abulehia, Reza Dariani, Julian Schindler</p>
-        <p><strong>Journal:</strong> IEEE Open Journal of Intelligent Transportation Systems ( Volume: 5) , 2024</p>
+        <p><strong>Journal:</strong> IEEE Open Journal of Intelligent Transportation Systems (Volume: 5), 2024</p>
         <p><strong>DOI:</strong> <a href="https://doi.org/10.1109/OJITS.2024.3515270" target="_blank">10.1109/OJITS.2024.3515270</a></p>
 
         <h2> Abstract</h2>
@@ -39,11 +42,28 @@
         <p><strong> GitHub Repository:</strong> <a href="https://github.com/giovannilucente/portfolio/tree/main/dynamic_game_trust_region_solver" target="_blank">View on GitHub</a></p>
 
         <h2> Scenarios </h2>
-        <img src="media/Car_following.png" alt="Car following">
-        <img src="media/Congested_Intersection.png" alt="Congested intersection">
-        <img src="media/Intersection.png" alt="Intersection">
-        <img src="media/Merging.png" alt="Merging">
-        <img src="media/Overtaking.png" alt="Overtaking">
+        <div class="scenarios">
+            <div class="scenario">
+                <img src="media/Car_following.png" alt="Car following">
+                <div class="label">Car Following</div>
+            </div>
+            <div class="scenario">
+                <img src="media/Congested_Intersection.png" alt="Congested intersection">
+                <div class="label">Congested Intersection</div>
+            </div>
+            <div class="scenario">
+                <img src="media/Intersection.png" alt="Intersection">
+                <div class="label">Intersection</div>
+            </div>
+            <div class="scenario">
+                <img src="media/Merging.png" alt="Merging">
+                <div class="label">Merging</div>
+            </div>
+            <div class="scenario">
+                <img src="media/Overtaking.png" alt="Overtaking">
+                <div class="label">Overtaking</div>
+            </div>
+        </div>
 
         <h2>Video Demonstration</h2>
         <video controls>
@@ -61,4 +81,3 @@
     <a href="../index.html"> Back to Portfolio</a>
 </body>
 </html>
-
