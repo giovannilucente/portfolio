@@ -9,12 +9,13 @@
         h1 { color: #222; font-size: 36px; }
         h2 { color: #444; font-size: 24px; margin-top: 20px; }
         p { font-size: 18px; max-width: 800px; margin: auto; line-height: 1.6; }
-        img { border-radius: 50%; width: 150px; height: 150px; margin-top: 10px; }
+        img { border-radius: 10px; width: 150px; height: auto; margin-top: 10px; }
         .container { width: 80%; margin: auto; text-align: center; }
         .projects { margin-top: 30px; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-        .project-card { width: 250px; text-align: center; }
-        .project-card img { width: 100%; height: auto; border-radius: 10px; transition: 0.3s; }
-        .project-card img:hover { transform: scale(1.05); }
+        .project-card { width: 300px; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); }
+        .image-container { display: flex; justify-content: center; gap: 10px; margin-bottom: 10px; }
+        .image-container img { width: 130px; height: auto; border-radius: 10px; transition: transform 0.3s ease-in-out; }
+        .image-container img:hover { transform: scale(1.05); }
         .project-card a { text-decoration: none; color: #0066cc; font-size: 18px; font-weight: bold; display: block; margin-top: 10px; }
         hr { width: 60%; margin: 30px auto; border: 1px solid #ccc; }
         .github-link { margin-top: 40px; font-size: 18px; }
@@ -49,19 +50,28 @@
         <div class="projects">
             <div class="project-card">
                 <a href="https://giovannilucente.github.io/portfolio/dynamic_game_trust_region_solver/index.html">
-                    <img src="media/dynamic_game.jpg" alt="Dynamic Game Trust Region Solver">
+                    <div class="image-container">
+                        <img src="media/dynamic_game_1.jpg" alt="Dynamic Game 1">
+                        <img src="media/dynamic_game_2.jpg" alt="Dynamic Game 2">
+                    </div>
                     🔹 Dynamic Game Trust Region Solver
                 </a>
             </div>
             <div class="project-card">
                 <a href="https://giovannilucente.github.io/portfolio/diffusion_model_trajectory_predictor/index.html">
-                    <img src="media/diffusion_model.jpg" alt="Diffusion Model for Trajectory Prediction">
+                    <div class="image-container">
+                        <img src="media/diffusion_model_1.jpg" alt="Diffusion Model 1">
+                        <img src="media/diffusion_model_2.jpg" alt="Diffusion Model 2">
+                    </div>
                     🔹 Diffusion Model for Trajectory Prediction
                 </a>
             </div>
             <div class="project-card">
                 <a href="https://giovannilucente.github.io/portfolio/LSTM_CNN_vehicle_speed_predictor/index.html">
-                    <img src="media/lstm_cnn.jpg" alt="LSTM-CNN Vehicle Longitudinal Motion Predictor">
+                    <div class="image-container">
+                        <img src="media/lstm_cnn_1.jpg" alt="LSTM-CNN 1">
+                        <img src="media/lstm_cnn_2.jpg" alt="LSTM-CNN 2">
+                    </div>
                     🔹 LSTM-CNN Vehicle Longitudinal Motion Predictor
                 </a>
             </div>
@@ -75,3 +85,4 @@
     </div>
 </body>
 </html>
+
