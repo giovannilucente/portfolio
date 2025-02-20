@@ -11,6 +11,10 @@
         p { font-size: 18px; max-width: 800px; margin: auto; line-height: 1.6; }
         img { border-radius: 10px; width: 150px; height: auto; margin-top: 10px; }
         .container { width: 80%; margin: auto; text-align: center; }
+        .social-links { margin-top: 20px; display: flex; justify-content: center; gap: 15px; }
+        .social-links a { display: inline-block; text-decoration: none; }
+        .social-links img { width: 40px; height: 40px; transition: transform 0.3s ease-in-out; }
+        .social-links img:hover { transform: scale(1.1); }
         .projects { margin-top: 30px; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
         .project-card { width: 300px; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); }
         .image-container { display: flex; justify-content: center; gap: 10px; margin-bottom: 10px; }
@@ -18,9 +22,6 @@
         .image-container img:hover { transform: scale(1.05); }
         .project-card a { text-decoration: none; color: #0066cc; font-size: 18px; font-weight: bold; display: block; margin-top: 10px; }
         hr { width: 60%; margin: 30px auto; border: 1px solid #ccc; }
-        .github-link { margin-top: 40px; font-size: 18px; }
-        .github-link a { text-decoration: none; color: #000; font-weight: bold; }
-        .github-link a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -34,6 +35,19 @@
             optimization, and dynamic systems. My work focuses on applying AI techniques to solve 
             real-world problems efficiently.
         </p>
+
+        <!-- Social Links Section -->
+        <div class="social-links">
+            <a href="https://github.com/giovannilucente" target="_blank">
+                <img src="media/github.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/giovannilucente" target="_blank">
+                <img src="media/256px-LinkedIn_logo_initials.png" alt="LinkedIn">
+            </a>
+            <a href="https://scholar.google.com/citations?user=XXXXXX" target="_blank">
+                <img src="media/Google_Scholar_logo.svg.png" alt="Google Scholar">
+            </a>
+        </div>
 
         <h2>Education</h2>
         <p><strong>Ph.D. in Mechanical Engineering and Transport Systems</strong> - Technische Universität Berlin, 2025</p>
@@ -75,12 +89,6 @@
                     🔹 LSTM-CNN Vehicle Longitudinal Motion Predictor
                 </a>
             </div>
-        </div>
-
-        <div class="github-link">
-            🔗 <a href="https://github.com/giovannilucente/portfolio" target="_blank">
-                View this Portfolio on GitHub
-            </a>
         </div>
     </div>
 </body>
