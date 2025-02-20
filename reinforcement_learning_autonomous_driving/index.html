@@ -6,12 +6,50 @@
     <title>Reinforcement Learning for Autonomous Driving: Comfort and Robustness to Noise</title>
     <style>
         body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
-        img { width: 200px; height: 150px; border-radius: 10px; object-fit: cover; margin: 10px; }
-        video { max-width: 80%; margin: 20px 0; }
-        .container { width: 80%; margin: auto; text-align: center; }
-        .scenarios { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
-        .scenario { display: flex; flex-direction: column; align-items: center; }
-        .label { font-size: 16px; font-weight: bold; margin-top: 5px; }
+        
+        /* Updated image styles */
+        img { 
+            width: 80%; /* Make images take more space */
+            max-width: 600px; /* Limit max size */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; 
+            object-fit: cover; 
+            margin: 20px 0; 
+        }
+        
+        /* Updated video styles */
+        video { 
+            width: 60%; /* Reduce video size */
+            max-width: 400px; /* Limit max width */
+            margin: 20px 0; 
+        }
+        
+        /* Updated layout container styles */
+        .container { 
+            width: 80%; 
+            margin: auto; 
+            text-align: center; 
+        }
+        
+        .scenarios { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 15px; 
+        }
+        
+        .scenario { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+        }
+        
+        .label { 
+            font-size: 14px; /* Smaller label font */
+            font-weight: bold; 
+            margin-top: 10px; 
+            max-width: 600px; /* Ensure text aligns with images */
+        }
     </style>
 </head>
 <body>
@@ -26,43 +64,50 @@
         <h2> Abstract</h2>
         <p>
             In the framework of high-level decision making for autonomous driving, Reinforcement Learning techniques have taken a central position 
-          in the development of algorithms and procedures for humanlike decisions. Past works show how effective this kind of techniques is in many 
-          research fields. Also in robotics and in particular in autonomous driving, the literature shows great results in this sense. There is now 
-          more emphasis on the second stage of development, regarding for instance the robustness to sensor noise and the driving comfort. In this 
-          project, these topics are faced, providing a deep analysis on the robustness of the algorithm to noise and proposing a new solution for 
-          the comfort issue. The first point is to test the PGPE algorithm, with a rule-based policy, i.e. the tool that models the behavior of the 
-          autonomous agent, in the SUMO simulation environment adding different models of noise. The noise is added on the state variables, taken as 
-          input of the policy, and by using ARMA processes, autocorrelation in time and cross correlation among variables is considered. The problem 
-          of comfort is faced with the proposal of a two step policy, a first step that is responsible for high level decisions, such as the time to 
-          enter in a cross, and a low level planner downstream. The planner receives as input the high level decisions and outputs the acceleration 
-          profile, optimizing the driving comfort. Some results are presented, showing that the research and development direction is promising. 
+            in the development of algorithms and procedures for humanlike decisions. Past works show how effective this kind of techniques is in many 
+            research fields. Also in robotics and in particular in autonomous driving, the literature shows great results in this sense. There is now 
+            more emphasis on the second stage of development, regarding for instance the robustness to sensor noise and the driving comfort. In this 
+            project, these topics are faced, providing a deep analysis on the robustness of the algorithm to noise and proposing a new solution for 
+            the comfort issue. The first point is to test the PGPE algorithm, with a rule-based policy, i.e. the tool that models the behavior of the 
+            autonomous agent, in the SUMO simulation environment adding different models of noise. The noise is added on the state variables, taken as 
+            input of the policy, and by using ARMA processes, autocorrelation in time and cross correlation among variables is considered. The problem 
+            of comfort is faced with the proposal of a two step policy, a first step that is responsible for high level decisions, such as the time to 
+            enter in a cross, and a low level planner downstream. The planner receives as input the high level decisions and outputs the acceleration 
+            profile, optimizing the driving comfort. Some results are presented, showing that the research and development direction is promising. 
         </p>
 
         <h2> Links</h2>
         <p><strong> Full Text:</strong> <a href="https://www.politesi.polimi.it/handle/10589/165482" target="_blank">Read Here</a></p>
         
         <h2> Scheme and Results </h2>
-        <div class="scheme">
-            <div class="scheme">
-                <img src="media/Scheme.png" alt="Decision-making scheme">
+        <div class="scenarios">
+            <div class="scenario">
+                <img src="media/Scheme.png" alt="scheme">
                 <div class="label">Two step decision making scheme. The agents decides speed and time to enter the intersection. The acceleration profile is decided by a planner downstream.</div>
             </div>
-            <div class="scheme">
+            <div class="scenario">
                 <img src="media/beforeafter.png" alt="results">
-                <div class="label">Acceleration profile with agent controlling directly acceleration and with the new high-level decision-making</div>
+                <div class="label">Acceleration profile with agent controlling directly acceleration and with the new high-level decision-making.</div>
             </div>
         </div>
 
         <h2>Video Demonstration</h2>
-        <video controls>
-            <source src="media/old.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <video controls>
-            <source src="media/new.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        
+        <div class="scenarios">
+            <div class="scenario">
+                <video controls>
+                    <source src="media/old.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="label">Demonstration of the old approach</div>
+            </div>
+            <div class="scenario">
+                <video controls>
+                    <source src="media/new.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="label">Demonstration of the new approach</div>
+            </div>
+        </div>
     </div>
 
     <br><br>
