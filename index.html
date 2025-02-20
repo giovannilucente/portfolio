@@ -16,9 +16,27 @@
         .social-links img { width: 40px; height: 40px; transition: transform 0.3s ease-in-out; }
         .social-links img:hover { transform: scale(1.1); }
         .projects { margin-top: 30px; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-        .project-card { width: 300px; text-align: center; padding: 15px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); }
-        .image-container { display: flex; justify-content: center; gap: 10px; margin-bottom: 10px; }
-        .image-container img { width: 300px; height: auto; border-radius: 10px; transition: transform 0.3s ease-in-out; }
+        .project-card { 
+            width: 300px; 
+            text-align: center; 
+            padding: 15px; 
+            border: 1px solid #ddd; 
+            border-radius: 10px; 
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+        }
+        .image-container { 
+            display: flex; 
+            justify-content: center; 
+            gap: 10px; 
+            margin-bottom: 10px; 
+        }
+        .image-container img { 
+            width: 100%; 
+            height: 200px; /* Fixed height for uniformity */
+            object-fit: cover; /* Ensures uniform appearance */
+            border-radius: 10px; 
+            transition: transform 0.3s ease-in-out; 
+        }
         .image-container img:hover { transform: scale(1.05); }
         .project-card a { text-decoration: none; color: #0066cc; font-size: 18px; font-weight: bold; display: block; margin-top: 10px; }
         hr { width: 60%; margin: 30px auto; border: 1px solid #ccc; }
@@ -65,7 +83,7 @@
             <div class="project-card">
                 <a href="https://giovannilucente.github.io/portfolio/dynamic_game_trust_region_solver/index.html">
                     <div class="image-container">
-                        <img src="media/Congested_Intersection.png" alt="Dynamic Game 2">
+                        <img src="media/Congested_Intersection.png" alt="Dynamic Game">
                     </div>
                     🔹 Dynamic Game Trust Region Solver
                 </a>
@@ -73,7 +91,7 @@
             <div class="project-card">
                 <a href="https://giovannilucente.github.io/portfolio/diffusion_model_trajectory_predictor/index.html">
                     <div class="image-container">
-                        <img src="media/2_16_output.png" alt="Diffusion Model 2">
+                        <img src="media/2_16_output.png" alt="Diffusion Model">
                     </div>
                     🔹 Diffusion Model for Trajectory Prediction
                 </a>
@@ -81,7 +99,7 @@
             <div class="project-card">
                 <a href="https://giovannilucente.github.io/portfolio/LSTM_CNN_vehicle_speed_predictor/index.html">
                     <div class="image-container">
-                        <img src="media/ex3.png" alt="LSTM-CNN 1">
+                        <img src="media/ex3.png" alt="LSTM-CNN">
                     </div>
                     🔹 LSTM-CNN Vehicle Longitudinal Motion Predictor
                 </a>
@@ -89,7 +107,7 @@
             <div class="project-card">
                 <a href="https://giovannilucente.github.io/portfolio/reinforcement_learning_autonomous_driving/index.html">
                     <div class="image-container">
-                        <img src="media/Schema.png" alt="RL 1">
+                        <img src="media/Schema.png" alt="Reinforcement Learning">
                     </div>
                     🔹 Reinforcement Learning for Autonomous Driving
                 </a>
@@ -98,4 +116,3 @@
     </div>
 </body>
 </html>
-
