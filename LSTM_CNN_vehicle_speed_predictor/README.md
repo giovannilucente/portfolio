@@ -21,4 +21,16 @@ pip install -r requirements.txt
 ```bash
 cd NGSIM
 # Download here the trajectory dataset in .txt format
+cd ..
+```
+
+### 4. Convert the dataset
+```bash
+python3 NGSIM_dataset_converter.py
+```
+A file called "NGSIM_data.pkl" will be created.
+
+### 5. Launch the training
+```bash
+python3 training.py
 ```
