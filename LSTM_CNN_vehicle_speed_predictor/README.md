@@ -1,6 +1,7 @@
 # Vehicle speed predictor based on LSTM-CNN hybrid neural network architecture
 
 This repository contains code for training a model that predicts vehicle speed using a LSTM-CNN hybrid network architecture. Follow the steps below to set up and run the training process.
+For more information visit the [project page](https://giovannilucente.github.io/portfolio/LSTM_CNN_vehicle_speed_predictor/index.html).
 
 ## Installation and Setup
 
