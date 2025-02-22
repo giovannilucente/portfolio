@@ -11,3 +11,4 @@ First, clone the repository to your local machine:
 ```bash
 git clone https://github.com/your-username/LSTM_CNN_vehicle_speed_predictor.git
 cd LSTM_CNN_vehicle_speed_predictor
+```
