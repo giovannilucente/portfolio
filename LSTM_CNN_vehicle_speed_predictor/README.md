@@ -28,9 +28,10 @@ cd ..
 ```bash
 python3 NGSIM_dataset_converter.py
 ```
-A file called "NGSIM_data.pkl" will be created.
+A file called "NGSIM_data.pkl", containing the converted dataset, will be created.
 
 ### 5. Launch the training
 ```bash
 python3 training.py
 ```
+The best model will be saved in a folder called "model".
