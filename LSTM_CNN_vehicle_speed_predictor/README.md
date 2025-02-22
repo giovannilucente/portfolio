@@ -12,7 +12,13 @@ First, clone the repository to your local machine:
 git clone https://github.com/giovannilucente/portfolio/tree/main/LSTM_CNN_vehicle_speed_predictor.git
 cd LSTM_CNN_vehicle_speed_predictor
 ```
-### 2. Install the dependencies
+### 2. Install the requirements
 ```bash
 pip install -r requirements.txt
+```
+
+### 3. Download the NGSIM dataset
+```bash
+cd NGSIM
+# Download here the trajectory dataset in .txt format
 ```
