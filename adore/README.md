@@ -17,3 +17,9 @@ For more information and to explore the full potential of ADORe, please visit th
 - Development of decision-making, trajectory planning, and control systems.
 - Development of multi-agent trajectory planning for infrastructure-managed traffic.
 - Implementation of AI modules for intelligent recognition and driving capabilities.
+
+### Video demonstration
+<video width="320" height="240" controls>
+  <source src="/media/adore_video.wbm" type="video/wbm">
+  Your browser does not support the video tag.
+</video>
