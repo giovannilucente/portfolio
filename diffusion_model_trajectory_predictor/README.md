@@ -28,13 +28,13 @@ pip install -r requirements.txt
 ```
 
 ### 3. Download the DLR UT dataset
-Navigate to the /trajectories folder and download the DLR UT trajectory dataset (in .csv format) from the official site:
+Navigate to the /trajectories folder and download the DLR UT trajectory dataset (in .csv format) from the [official site](https://zenodo.org/records/14773161):
 ```bash
 cd trajectories
 # Download here the trajectory dataset in .csv format
 cd ..
 ```
-Note: Please ensure that you download the dataset into the /trajectories folder.
+Note: ensure that you download the dataset into the /trajectories folder.
 
 ### 4. Convert the dataset
 Once the dataset is downloaded, use the provided Python script to convert the raw DLR UT dataset into images that can be used for training. Run the following command:
@@ -48,6 +48,29 @@ Now you can train the model using the following command:
 ```bash
 python3 training.py
 ```
-The model will train and the best-performing model will be saved in the folder /output/{name of the model}_{name of the loss function}.
+The model will train and the best-performing model will be saved in the folder:
+```bash
+/output/{name of the model}_{name of the loss function}.
+```
+Generated images of the validation dataset can be seen in the folder:
+```bash
+/output/validation_plots_{name of the model}_{name of the loss function}. 
+```
+## Example of Input, Ground Truth, and Predicted Images
 
-Generated images of the validation dataset can be seen in the folder /output/validation_plots_{name of the model}_{name of the loss function}. 
+Below is an example of the input image, ground truth image, and predicted image.
+
+### Input Image  
+This represents the previous second of vehicle trajectories.
+
+![Input Image](media/2_21_input.png)
+
+### Ground Truth Image  
+This shows the actual vehicle trajectories for the next second.
+
+![Ground Truth Image](media/2_21_ground_truth.png)
+
+### Predicted Image  
+This is the model's predicted trajectories for the next second.
+
+![Predicted Image](media/2_21_output.png)
