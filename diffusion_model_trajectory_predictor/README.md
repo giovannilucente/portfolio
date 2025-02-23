@@ -60,17 +60,5 @@ Generated images of the validation dataset can be seen in the folder:
 
 Below is an example of the input image, ground truth image, and predicted image.
 
-### Input Image  
-This represents the previous second of vehicle trajectories.
+<p align="center"> <img src="media/2_21_input.png" alt="Input Image" width="30%"/> <img src="media/2_21_ground_truth.png" alt="Ground Truth Image" width="30%"/> <img src="media/2_21_output.png" alt="Predicted Image" width="30%"/> </p>
 
-![Input Image](media/2_21_input.png)
-
-### Ground Truth Image  
-This shows the actual vehicle trajectories for the next second.
-
-![Ground Truth Image](media/2_21_ground_truth.png)
-
-### Predicted Image  
-This is the model's predicted trajectories for the next second.
-
-![Predicted Image](media/2_21_output.png)
