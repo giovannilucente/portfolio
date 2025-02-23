@@ -13,3 +13,5 @@ This project has been presented in an article:
 
 Lucente, G., Dariani, R., Schindler, J. et al. **A Bayesian Approach with Prior Mixed Strategy Nash Equilibrium for Vehicle Intention Prediction**. 
 *Automot. Innov. 6, 425–437* (2023). [https://doi.org/10.1007/s42154-023-00229-0](https://doi.org/10.1007/s42154-023-00229-0).
+
+<p align="center"> <img src="media/bayesian_scenario1.png" alt="Scenario 1" width="30%"/> <img src="media/bayesian_scenario2.png" alt="Scenario 2" width="30%"/> </p>
