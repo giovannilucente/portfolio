@@ -49,4 +49,5 @@ Now you can train the model using the following command:
 python3 training.py
 ```
 The model will train, and the best-performing model will be saved in the folder /output/{name of the model}_{name of the loss function}.
+
 Generated images of the validation dataset can be seen in the folder /output/validation_plots_{name of the model}_{name of the loss function}. 
