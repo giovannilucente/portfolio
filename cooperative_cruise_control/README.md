@@ -7,4 +7,4 @@ A paper about this work has been published:
 
 **Decentralized Platoon Management and Cooperative Cruise Control of Autonomous Cars with Manoeuvre Coordination Message**. In *Proceedings of the 8th International Conference on Vehicle Technology and Intelligent Transport Systems - VEHITS*; ISBN 978-989-758-573-9; ISSN 2184-495X, SciTePress, pages 281-289. DOI: [10.5220/0011043400003191](https://www.scitepress.org/Link.aspx?doi=10.5220/0011043400003191)
 
-
+![Demonstration](media/cooperative_cruise_control.jpg)
