@@ -1,5 +1,5 @@
 """
-Author: Giovanni Lucente, Marko Mizdrak
+Author: Giovanni Lucente
 
 This script trains a model using different modalities (standard supervised learning or diffusion) 
 to predict the trajectories of traffic participants for one second. The predicted trajectories are 
