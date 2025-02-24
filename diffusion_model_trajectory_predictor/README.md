@@ -1,4 +1,4 @@
-# Trajectory predictor based on bird eye view images
+# Generative AI for Trajectory Prediction
 
 This project is currently in progress.
 
