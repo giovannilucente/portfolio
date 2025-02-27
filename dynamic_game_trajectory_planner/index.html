@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Game Trajectory Planner</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        img { width: 200px; height: 150px; border-radius: 10px; object-fit: cover; margin: 10px; }
+        video { max-width: 80%; margin: 20px 0; }
+        .container { width: 80%; margin: auto; text-align: center; }
+        .scenarios { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+        .scenario { display: flex; flex-direction: column; align-items: center; }
+        .label { font-size: 16px; font-weight: bold; margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Dynamic Game Trajectory Planner</h1>
+
+    <div class="container">
+        <h2> Paper </h2>
+        <p><strong>"DeepGame-TP: Integrating Dynamic Game Theory and Deep Learning for Trajectory Planning"</strong></p>
+        <p><strong>Authors:</strong> Giovanni Lucente, Mikkel Skov Maarssoe, Sanath Himasekhar Konthala, Anas Abulehia, Reza Dariani, Julian Schindler</p>
+        <p><strong>Journal:</strong> IEEE Open Journal of Intelligent Transportation Systems (Volume: 5), 2024</p>
+        <p><strong>DOI:</strong> <a href="https://doi.org/10.1109/OJITS.2024.3515270" target="_blank">10.1109/OJITS.2024.3515270</a></p>
+
+        <h2> Abstract</h2>
+        <p>
+            Trajectory planning for automated vehicles in traffic has been a challenging task and a hot topic in recent research. 
+            The need for flexibility, transparency, interpretability and predictability poses challenges in deploying data-driven 
+            approaches in this safety-critical application. This paper proposes DeepGame-TP, a game-theoretical trajectory planner 
+            that uses deep learning to model each agent’s cost function and adjust it based on observed behavior. In particular, 
+            a LSTM network predicts each agent’s desired speed, forming a penalizing term that reflects aggressiveness in the cost 
+            function. Experiments demonstrated significant advantages of this innovative framework, highlighting the adaptability 
+            of DeepGame-TP in intersection, overtaking, car following and merging scenarios. It effectively avoids dangerous situations 
+            that could arise from incorrect cost function estimates. The approach is suitable for real-time applications, solving the 
+            Generalized Nash Equilibrium Problem (GNEP) in scenarios with up to four vehicles in under 100 milliseconds on average.
+        </p>
+
+        <h2> Links</h2>
+        <p><strong> Full Paper:</strong> <a href="https://ieeexplore.ieee.org/document/10793110" target="_blank">Read Here</a></p>
+        <p><strong> GitHub Repository:</strong> <a href="https://github.com/giovannilucente/portfolio/tree/main/dynamic_game_trajectory_planner" target="_blank">View on GitHub</a></p>
+
+        <h2> Scenarios </h2>
+        <div class="scenarios">
+            <div class="scenario">
+                <img src="media/Car_following.png" alt="Car following">
+                <div class="label">Car Following</div>
+            </div>
+            <div class="scenario">
+                <img src="media/Congested_Intersection.png" alt="Congested intersection">
+                <div class="label">Congested Intersection</div>
+            </div>
+            <div class="scenario">
+                <img src="media/Intersection.png" alt="Intersection">
+                <div class="label">Intersection</div>
+            </div>
+            <div class="scenario">
+                <img src="media/Merging.png" alt="Merging">
+                <div class="label">Merging</div>
+            </div>
+            <div class="scenario">
+                <img src="media/Overtaking.png" alt="Overtaking">
+                <div class="label">Overtaking</div>
+            </div>
+        </div>
+
+        <h2>Video Demonstration</h2>
+        <video controls>
+            <source src="media/intersection.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+        <video controls>
+            <source src="media/overtaking_ImfYlp0P.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+        
+    </div>
+
+    <br><br>
+    <a href="../index.html"> Back to Portfolio</a>
+</body>
+</html>
