@@ -58,6 +58,7 @@ make
 cd ..
 python3 plot_trajectories.py
 ```
+If everything works, you should see the plot of the computed trajectories in three different scenarios:
 
 
 
