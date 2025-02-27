@@ -46,8 +46,7 @@ vcpkg install eigen3
 **Linux / macOS**
 ```bash
 mkdir -p build
-chmod +x build_and_run.sh  # Only needed the first time
-./build_and_run.sh
+bash build_and_run.sh
 ```
 **Windows**
 ```bash
