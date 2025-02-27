@@ -43,6 +43,12 @@ vcpkg install eigen3
 ```
 
 ### 4. Build the Project (CMake)
+**Linux**
+```bash
+mkdir build
+build_and_run.sh
+```
+**Not Linux**
 ```bash
 mkdir build
 cd build
