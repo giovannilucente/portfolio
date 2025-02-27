@@ -11,15 +11,46 @@ For further information and videos of **DeepGame-TP** implemented in [**ADORe**]
 ## Installation and Setup:
 To install and run this project locally, follow these steps:
 
-### 1. Clone the repository
+### 1. Clone the Repository
 First, clone the repository to your local machine:
 ```bash
 git clone https://github.com/giovannilucente/portfolio.git
 cd portfolio/dynamic_game_trajectory_planner
 ```
 
-### 2. Install the requirements
-Install all the required dependencies listed in the requirements.txt:
+### 2. Install Python Dependencies
+Install all the required dependencies listed in the requirements.txt, for the python file used for plotting:
 ```bash
 pip install -r requirements.txt
 ```
+
+### 3. Install C++ Dependencies
+
+**Linux(Ubuntu/Debian)**
+```bash
+sudo apt update
+sudo apt install libeigen3-dev cmake g++
+```
+
+**Mac (Homebrew)**
+```bash
+brew install eigen cmake
+```
+
+**Windows (vcpkg)**
+```bash
+vcpkg install eigen3
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
