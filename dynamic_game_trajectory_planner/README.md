@@ -59,7 +59,7 @@ cd ..
 python3 plot_trajectories.py
 ```
 If everything works, you should see the plot of the computed trajectories in three different scenarios:
-
+![Trajectories](media/Trajectories_dynamic_game.png)
 
 
 
