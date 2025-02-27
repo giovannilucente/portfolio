@@ -42,7 +42,7 @@ brew install eigen cmake
 vcpkg install eigen3
 ```
 
-### 4. Build the Project (CMake)
+### 4. Build and Run the Project (CMake)
 **Linux**
 ```bash
 mkdir build
@@ -54,6 +54,9 @@ mkdir build
 cd build
 cmake ..
 make
+./dynamic_game_trajectory_planner
+cd ..
+python3 plot_trajectories.py
 ```
 
 
