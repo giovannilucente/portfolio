@@ -42,7 +42,13 @@ brew install eigen cmake
 vcpkg install eigen3
 ```
 
-
+### 4. Build the Project (CMake)
+```bash
+mkdir build
+cd build
+cmake ..
+make
+```
 
 
 
