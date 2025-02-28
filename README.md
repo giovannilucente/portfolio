@@ -8,6 +8,6 @@ The topic of this project is a trajectory planner based on a game-theoretical fr
 Giovanni Lucente, Mikkel Skov Maarssoe, Sanath Himasekhar Konthala, Anas Abulehia, Reza Dariani, Julian Schindler, **DeepGame-TP: Integrating Dynamic Game Theory and Deep Learning for Trajectory Planning**, *IEEE Open Journal of Intelligent Transportation Systems* (Volume: 5), 2024. DOI: [10.1109/OJITS.2024.3515270](https://ieeexplore.ieee.org/document/10793110).
 
 For detailed information about the code, please refer to the [GitHub repository](https://github.com/giovannilucente/portfolio/tree/main/dynamic_game_trajectory_planner).
-[Congested Intersection Image](media/Congested_intersection.png)
+[Congested Intersection Image](media/Congested_Intersection.png) [Overtaking](media/Overtaking.png)
 
 
