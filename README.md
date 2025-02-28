@@ -18,4 +18,8 @@ This project is currently in progress.
 This repository provides code for training a model that predicts vehicle trajectories. The model takes as input an image representing the previous one-second trajectory and generates an output image depicting the predicted trajectories for the next second in the traffic scenario.
 For more details, visit the [project page](https://giovannilucente.github.io/portfolio/generative_ai_trajectory_prediction/index.html).
 This project is conducted in collaboration with other colleagues from DLR.
-
+<p align="center">
+  <img src="media/2_21_ground_truth.png" alt="Congested Intersection Image" width="45%"/>
+  <img src="media/2_21_output.png" alt="Overtaking" width="45%"/>
+</p>
+Ground truth and predicted trajectories example.
