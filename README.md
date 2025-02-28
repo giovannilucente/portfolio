@@ -67,7 +67,7 @@ The likelihood is then computed based on the Kullback-Leibler divergence. The ga
 individual preferences, a well known strategic game. Finding the MSNE for these games is in the PPAD PLS complexity class, with polynomial-time 
 tractability. The approach shows good results in simulations in the long term horizon (10s), with its computational complexity allowing for online applications. 
 
-The algorithm has been implemented and tested in [ADORe](https://github.com/eclipse-adore/adore). For further information please visit the [website](https://giovannilucente.github.io/portfolio/bayesian_approach_prior_mixed_strategy_nash_equilibrium/index.html).
+The algorithm has been implemented and tested in [ADORe](https://github.com/DLR-TS/adore). For further information please visit the [website](https://giovannilucente.github.io/portfolio/bayesian_approach_prior_mixed_strategy_nash_equilibrium/index.html).
 This project has been presented in an article: 
 
 Giovanni Lucente, Reza Dariani, Julian Schindler, Michael Ortgiese, **A Bayesian Approach with Prior Mixed Strategy Nash Equilibrium for Vehicle Intention Prediction**. 
