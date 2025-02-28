@@ -16,10 +16,13 @@ For detailed information about the code, please refer to the [GitHub repository]
 ## 2. Generative AI for Trajectory Prediction
 This project is currently in progress.
 This repository provides code for training a model that predicts vehicle trajectories. The model takes as input an image representing the previous one-second trajectory and generates an output image depicting the predicted trajectories for the next second in the traffic scenario.
-For more details, visit the [project page](https://giovannilucente.github.io/portfolio/generative_ai_trajectory_prediction/index.html).
+For more details, visit the [project page](https://giovannilucente.github.io/portfolio/generative_ai_trajectory_prediction/index.html) and the [GitHub repository](https://github.com/giovannilucente/portfolio/tree/main/generative_ai_trajectory_prediction).
 This project is conducted in collaboration with other colleagues from DLR.
 <p align="center">
   <img src="media/2_21_ground_truth.png" alt="Congested Intersection Image" width="45%"/>
   <img src="media/2_21_output.png" alt="Overtaking" width="45%"/>
 </p>
 Ground truth and predicted trajectories example.
+
+## 3. Vehicle speed predictor based on LSTM-CNN hybrid neural network architecture
+This repository contains code for training a model that predicts vehicle speed using a LSTM-CNN hybrid network architecture. Follow the steps below to set up and run the training process. For more information visit the [project page](https://giovannilucente.github.io/portfolio/LSTM_CNN_vehicle_speed_predictor/index.html) and the [GitHub repository](https://github.com/giovannilucente/portfolio/tree/main/LSTM_CNN_vehicle_speed_predictor).
