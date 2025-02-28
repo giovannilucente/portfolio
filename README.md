@@ -15,7 +15,7 @@ For detailed information about the code, please refer to the [GitHub repository]
 
 ## 2. Generative AI for Trajectory Prediction
 This project is currently in progress.
-This repository provides code for training a model that predicts vehicle trajectories. The model takes as input an image representing the previous one-second trajectory and generates an output image depicting the predicted trajectories for the next second in the traffic scenario.
+This project focuses on training a model to predict vehicle trajectories. The model takes an input image representing the trajectory over the past second and generates an output image forecasting the trajectories for the next second within the traffic scenario.
 For more details, visit the [project page](https://giovannilucente.github.io/portfolio/generative_ai_trajectory_prediction/index.html) and the [GitHub repository](https://github.com/giovannilucente/portfolio/tree/main/generative_ai_trajectory_prediction).
 This project is conducted in collaboration with other colleagues from DLR.
 <p align="center">
@@ -25,4 +25,15 @@ This project is conducted in collaboration with other colleagues from DLR.
 Ground truth and predicted trajectories example.
 
 ## 3. Vehicle speed predictor based on LSTM-CNN hybrid neural network architecture
-This repository contains code for training a model that predicts vehicle speed using a LSTM-CNN hybrid network architecture. Follow the steps below to set up and run the training process. For more information visit the [project page](https://giovannilucente.github.io/portfolio/LSTM_CNN_vehicle_speed_predictor/index.html) and the [GitHub repository](https://github.com/giovannilucente/portfolio/tree/main/LSTM_CNN_vehicle_speed_predictor).
+This project focuses on training a model that predicts vehicle speed using a LSTM-CNN hybrid network architecture. Follow the steps below to set up and run the training process. For more information visit the [project page](https://giovannilucente.github.io/portfolio/LSTM_CNN_vehicle_speed_predictor/index.html) and the [GitHub repository](https://github.com/giovannilucente/portfolio/tree/main/LSTM_CNN_vehicle_speed_predictor). For further information please refer to the related paper:
+
+Giovanni Lucente, Mikkel Skov Maarssoe, Iris Kahl, Julian Schindler, **Deep Learning Algorithms for Longitudinal Driving Behavior Prediction: A Comparative Analysis of Convolutional Neural Network and Long–Short-Term Memory Models**, *SAE International Journal of Connected and Automated Vehicles*, 2024. DOI: [10.4271/12-07-04-0025](https://doi.org/10.4271/12-07-04-0025).
+
+## 4. ADORe
+
+
+
+
+
+
+
