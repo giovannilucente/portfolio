@@ -29,7 +29,21 @@ This project focuses on training a model that predicts vehicle speed using a LST
 
 Giovanni Lucente, Mikkel Skov Maarssoe, Iris Kahl, Julian Schindler, **Deep Learning Algorithms for Longitudinal Driving Behavior Prediction: A Comparative Analysis of Convolutional Neural Network and Long–Short-Term Memory Models**, *SAE International Journal of Connected and Automated Vehicles*, 2024. DOI: [10.4271/12-07-04-0025](https://doi.org/10.4271/12-07-04-0025).
 
-## 4. ADORe
+## 4. Reinforcement Learning for Autonomous Driving
+My Master's thesis completed at Politecnico di Milano under the supervision of Prof. Marcello Restelli. 
+In this project, the topics of sensor noise and driving comfort in reinforcement learning are faced, providing a deep analysis on the robustness of the algorithm to noise and proposing a new solution for the comfort issue. The first point is to test the PGPE algorithm, with a rule-based policy, i.e. the tool that models the behavior of the autonomous agent, in the SUMO simulation environment adding different models of noise. The noise is added on the state variables, taken as input of the policy, and by using ARMA processes, autocorrelation in time and cross correlation among variables is considered. The problem of comfort is faced with the proposal of a two step policy, a first step that is responsible for high level decisions, such as the time to enter in a cross, and a low level planner downstream. The planner receives as input the high level decisions and outputs the acceleration profile, optimizing the driving comfort. 
+For further information please visit the [project website](https://giovannilucente.github.io/portfolio/reinforcement_learning_autonomous_driving/index.html) or read the full text [here](https://www.politesi.polimi.it/handle/10589/165482).
+
+
+
+
+
+
+
+
+
+
+
 
 
 
