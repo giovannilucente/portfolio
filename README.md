@@ -3,7 +3,7 @@ This repository contains some of the projects I have worked on over the years. F
 For more information about me and the projects I worked on, please visit my [website](https://giovannilucente.github.io/portfolio/).
 
 ## 1. DeepGame-TP: Dynamic Game-Theoretic Trajectory Planner
-The topic of this project is a trajectory planner based on a game-theoretical framework. Traffic is modeled as a non-cooperative dynamic game, in which agents choose their optimal strategies while considering that other agents are also optimizing their own strategies. The trajectory planner solves the dynamic game by computing the **Generalized Nash Equilibrium (GNE)**, a state where no agent can improve its outcome unilaterally, given the strategic choices and constraints of all other agents. For further information please check the related paper:
+The topic of this project is a trajectory planner based on a game-theoretical framework. Traffic is modeled as a non-cooperative dynamic game, in which agents choose their optimal strategies while considering that other agents are also optimizing their own strategies. The trajectory planner solves the dynamic game by computing the **Generalized Nash Equilibrium (GNE)**, a state where no agent can improve its outcome unilaterally, given the strategic choices and constraints of all other agents. For further information please check the [website of the project](https://giovannilucente.github.io/portfolio/dynamic_game_trajectory_planner/index.html) and the related paper:
 
 Giovanni Lucente, Mikkel Skov Maarssoe, Sanath Himasekhar Konthala, Anas Abulehia, Reza Dariani, Julian Schindler, **DeepGame-TP: Integrating Dynamic Game Theory and Deep Learning for Trajectory Planning**, *IEEE Open Journal of Intelligent Transportation Systems* (Volume: 5), 2024. DOI: [10.1109/OJITS.2024.3515270](https://ieeexplore.ieee.org/document/10793110).
 
@@ -12,8 +12,10 @@ For detailed information about the code, please refer to the [GitHub repository]
   <img src="media/Congested_Intersection.png" alt="Congested Intersection Image" width="45%"/>
   <img src="media/Overtaking.png" alt="Overtaking" width="45%"/>
 </p>
-Two of the simulated scenarios implemented in [ADORe](https://github.com/DLR-TS/adore).
 
 ## 2. Generative AI for Trajectory Prediction
-
+This project is currently in progress.
+This repository provides code for training a model that predicts vehicle trajectories. The model takes as input an image representing the previous one-second trajectory and generates an output image depicting the predicted trajectories for the next second in the traffic scenario.
+For more details, visit the [project page](https://giovannilucente.github.io/portfolio/generative_ai_trajectory_prediction/index.html).
+This project is conducted in collaboration with other colleagues from DLR.
 
