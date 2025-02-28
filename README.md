@@ -31,10 +31,23 @@ Giovanni Lucente, Mikkel Skov Maarssoe, Iris Kahl, Julian Schindler, **Deep Lear
 
 ## 4. Reinforcement Learning for Autonomous Driving
 My Master's thesis completed at Politecnico di Milano under the supervision of Prof. Marcello Restelli. 
-In this project, the topics of sensor noise and driving comfort in reinforcement learning are faced, providing a deep analysis on the robustness of the algorithm to noise and proposing a new solution for the comfort issue. The first point is to test the PGPE algorithm, with a rule-based policy, i.e. the tool that models the behavior of the autonomous agent, in the SUMO simulation environment adding different models of noise. The noise is added on the state variables, taken as input of the policy, and by using ARMA processes, autocorrelation in time and cross correlation among variables is considered. The problem of comfort is faced with the proposal of a two step policy, a first step that is responsible for high level decisions, such as the time to enter in a cross, and a low level planner downstream. The planner receives as input the high level decisions and outputs the acceleration profile, optimizing the driving comfort. 
+In this project, the topics of sensor noise and driving comfort in reinforcement learning are faced, providing a deep analysis on the robustness of the algorithm to noise and proposing a new solution for the comfort issue. The problem of comfort is faced with the proposal of a two step policy, a first step that is responsible for high level decisions, such as the time to enter in a cross, and a low level planner downstream. The planner receives as input the high level decisions and outputs the acceleration profile, optimizing the driving comfort. 
 For further information please visit the [project website](https://giovannilucente.github.io/portfolio/reinforcement_learning_autonomous_driving/index.html) or read the full text [here](https://www.politesi.polimi.it/handle/10589/165482).
 
-
+## 5. ADORe
+Eclipse ADORe is a modular software library and toolkit for decision making, planning, control and simulation of automated vehicles. 
+It is developed by the [German Aerospace Center (DLR), Institute for Transportation Systems](https://www.dlr.de/en/ts/). ADORe provides: 
+- Algorithms and data models applied in real automated driving system for motion planning and control.
+- Mechanisms for safe interaction with other CAVs, infrastructure, traffic management, interactions with human-driven vehicles, bicyclists, pedestrians
+My contributions are:
+- Development of decision-making, trajectory planning, and control systems.
+- Development of multi-agent trajectory planning for infrastructure-managed traffic.
+- Implementation of AI modules for intelligent recognition and driving capabilities.
+For further information and video, please visit [this website](https://giovannilucente.github.io/portfolio/adore/index.html).
+For more information and to explore the full potential of ADORe, please visit the [ADORe GitHub repository](https://github.com/DLR-TS/adore?tab=readme-ov-file).
+<p align="center">
+  <img src="media/adore_picture.jpg" alt="ADORe picture" width="45%"/>
+</p>
 
 
 
