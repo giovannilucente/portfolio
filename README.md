@@ -12,5 +12,8 @@ For detailed information about the code, please refer to the [GitHub repository]
   <img src="media/Congested_Intersection.png" alt="Congested Intersection Image" width="45%"/>
   <img src="media/Overtaking.png" alt="Overtaking" width="45%"/>
 </p>
+*Two of the simulated scenarios implemented in [ADORe](https://github.com/DLR-TS/adore)*.
+
+## 2. Generative AI for Trajectory Prediction
 
 
