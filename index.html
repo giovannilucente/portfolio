@@ -1,142 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Giovanni Lucente - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; color: #333; }
-        h1 { color: #222; font-size: 36px; }
-        h2 { color: #444; font-size: 24px; margin-top: 20px; }
-        p { font-size: 18px; max-width: 800px; margin: auto; line-height: 1.6; text-align: justify}
-        img { border-radius: 10px; width: 150px; height: auto; margin-top: 10px; }
-        .container { width: 80%; margin: auto; text-align: center; }
-        .social-links { margin-top: 20px; display: flex; justify-content: center; gap: 15px; }
-        .social-links a { display: inline-block; text-decoration: none; }
-        .social-links img { width: 40px; height: 40px; transition: transform 0.3s ease-in-out; }
-        .social-links img:hover { transform: scale(1.1); }
-        .projects { margin-top: 30px; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-        .project-card { 
-            width: 300px; 
-            text-align: center; 
-            padding: 15px; 
-            border: 1px solid #ddd; 
-            border-radius: 10px; 
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+      body {
+        font-family: "Inter", sans-serif;
+        margin: 4rem 1.5rem;
+        color: #333;
+      }
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+      }
+      .header-content {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+      }
+      h1 {
+        color: #222;
+        font-size: 1.75rem;
+        margin: 0;
+      }
+      .header-content p {
+        margin: 0;
+        font-size: 1.25rem;
+      }
+      .social-links {
+        display: flex;
+        gap: 15px;
+        margin-top: 1rem;
+      }
+      .social-links a {
+        display: inline-block;
+        text-decoration: none;
+      }
+      .social-links img {
+        width: 40px;
+        height: 40px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .social-links img:hover {
+        transform: scale(1.1);
+      }
+      h2 {
+        color: #444;
+        font-size: 24px;
+        margin-top: 3rem;
+        display: flex;
+        align-items: baseline;
+        gap: 1rem;
+      }
+      h2::after {
+        content: "";
+        display: block;
+        flex: 1;
+        height: 1px;
+        background: #cacaca;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: left;
+        text-wrap: balance;
+      }
+      img {
+        border-radius: 1rem;
+        width: 150px;
+        height: auto;
+      }
+      .container {
+        max-width: 50rem;
+        margin: auto;
+      }
+      .projects {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .project-card {
+        padding: 1rem;
+        padding-bottom: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1),
+          0px 4px 8px rgba(0, 0, 0, 0.08);
+        position: relative;
+      }
+      .image-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+      }
+      .image-container img {
+        width: 100%;
+        height: 200px; /* Fixed height for uniformity */
+        object-fit: cover; /* Ensures uniform appearance */
+        transition: transform 0.3s ease-in-out;
+        border-radius: 0;
+      }
+      .project-card:hover img {
+        transform: scale(1.05);
+      }
+      .project-card a {
+        text-decoration: none;
+        color: #0066cc;
+        font-size: 18px;
+        font-weight: bold;
+        display: block;
+      }
+      .project-card a::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+      hr {
+        width: 60%;
+        margin: 30px auto;
+        border: 1px solid #ccc;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        padding: 0;
+        margin-top: 1.5rem;
+      }
+      li,
+      li h3,
+      .project-card a {
+        font-size: 1rem;
+      }
+      li p {
+        margin-top: 0.125rem;
+      }
+      h3 {
+        margin: 0;
+      }
+      .list-date {
+        margin: 0;
+        white-space: nowrap;
+        font-size: 0.875rem;
+      }
+      .list-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 1.5rem;
+      }
+
+      @media screen and (min-width: 21.25rem) {
+        h1 {
+          font-size: 2rem;
+          white-space: nowrap;
         }
-        .image-container { 
-            display: flex; 
-            justify-content: center; 
-            gap: 10px; 
-            margin-bottom: 10px; 
+
+        .header-content p {
+          font-size: 1.5rem;
         }
-        .image-container img { 
-            width: 100%; 
-            height: 200px; /* Fixed height for uniformity */
-            object-fit: cover; /* Ensures uniform appearance */
-            border-radius: 10px; 
-            transition: transform 0.3s ease-in-out; 
+      }
+
+      @media screen and (min-width: 35rem) {
+        .projects {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
         }
-        .image-container img:hover { transform: scale(1.05); }
-        .project-card a { text-decoration: none; color: #0066cc; font-size: 18px; font-weight: bold; display: block; margin-top: 10px; }
-        hr { width: 60%; margin: 30px auto; border: 1px solid #ccc; }
+      }
+
+      @media screen and (min-width: 48rem) {
+        body {
+          margin: 4rem;
+        }
+
+        p {
+          font-size: 1.125rem;
+          line-height: 1.6;
+          text-align: left;
+          text-wrap: balance;
+        }
+
+        li,
+        li h3,
+        .project-card a {
+          font-size: 1.125rem;
+        }
+
+        li p {
+          margin-top: 0.25rem;
+        }
+
+        .list-date {
+          font-size: 1.125rem;
+        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>Giovanni Lucente</h1>
-        <img src="media/Foto.jpg" alt="Giovanni Lucente">
-        
-        <h2>About Me</h2>
-        <p>
-            I am a PhD student at TU Berlin specializing in autonomous driving, as well as a researcher and software developer at the 
-            German Aerospace Center (DLR). My expertise lies in robotics, AI, computer vision and multi-agent systems. My work focuses 
-            on conducting research and developing advanced solutions for intelligent transportation and autonomous systems.
-        </p>
-
-        <!-- Social Links Section -->
-        <div class="social-links">
-            <a href="https://github.com/giovannilucente/portfolio/tree/main" target="_blank">
-                <img src="media/github.png" alt="GitHub">
+      <header class="header">
+        <img src="media/Foto.jpg" alt="Giovanni Lucente" />
+        <div class="header-content">
+          <h1>Giovanni Lucente</h1>
+          <p>Mechanical engineer</p>
+          <div class="social-links">
+            <a
+              href="https://github.com/giovannilucente/portfolio/tree/main"
+              target="_blank"
+            >
+              <img src="media/github.png" alt="GitHub" />
             </a>
-            <a href="https://www.linkedin.com/in/giovanni-lucente-12720b19a/" target="_blank">
-                <img src="media/256px-LinkedIn_logo_initials.png" alt="LinkedIn">
+            <a
+              href="https://www.linkedin.com/in/giovanni-lucente-12720b19a/"
+              target="_blank"
+            >
+              <img
+                src="media/256px-LinkedIn_logo_initials.png"
+                alt="LinkedIn"
+              />
             </a>
-            <a href="https://scholar.google.com/citations?user=8WYAE18AAAAJ&hl=it&oi=ao" target="_blank">
-                <img src="media/Google_Scholar_logo.svg.png" alt="Google Scholar">
+            <a
+              href="https://scholar.google.com/citations?user=8WYAE18AAAAJ&hl=it&oi=ao"
+              target="_blank"
+            >
+              <img
+                src="media/Google_Scholar_logo.svg.png"
+                alt="Google Scholar"
+              />
             </a>
+          </div>
         </div>
+      </header>
 
-        <h2>Education</h2>
-        <p><strong>Ph.D. in Mechanical Engineering</strong> - Technische Universität Berlin, 2025</p>
-        <p><strong>M.Sc. in Mechanical Engineering</strong> - Politecnico di Milano, 2020</p>
-        <p><strong>B.Sc. in Mechanical Engineering</strong> - Politecnico di Milano, 2017</p>
+      <h2>About Me</h2>
+      <p>
+        I am a PhD student at TU Berlin specializing in autonomous driving, as
+        well as a researcher and software developer at the German Aerospace
+        Center (DLR). My expertise lies in robotics, AI, computer vision and
+        multi-agent systems. My work focuses on conducting research and
+        developing advanced solutions for intelligent transportation and
+        autonomous systems.
+      </p>
 
-        <h2>Work Experience</h2>
-        <p><strong>Research Scientist / Software Developer</strong> - DLR (German Aerospace Center) (2021 - Present)</p>
-        <p><strong>Advanced Manufacturing Engineer</strong> - Central Manufacturing, Marelli (2020 - 2021)</p>
-        <p><strong>Mechatronics Testing Engineer</strong> - Advanced R&D, Brembo (2019 - 2020)</p>
+      <!-- Social Links Section -->
 
-        <h2>Projects</h2>
-        <hr>
-        <div class="projects">
-            <div class="project-card">
-                <a href="https://giovannilucente.github.io/portfolio/dynamic_game_trajectory_planner/index.html">
-                    <div class="image-container">
-                        <img src="media/Congested_Intersection.png" alt="Dynamic Game">
-                    </div>
-                    🔹 Dynamic Game-Theoretic Trajectory Planner
-                </a>
-            </div>
-            <div class="project-card">
-                <a href="https://giovannilucente.github.io/portfolio/generative_ai_trajectory_prediction/index.html">
-                    <div class="image-container">
-                        <img src="media/2_21_output.png" alt="Diffusion Model">
-                    </div>
-                    🔹 Generative AI for Trajectory Prediction
-                </a>
-            </div>
-            <div class="project-card">
-                <a href="https://giovannilucente.github.io/portfolio/LSTM_CNN_vehicle_speed_predictor/index.html">
-                    <div class="image-container">
-                        <img src="media/ex3.png" alt="LSTM-CNN">
-                    </div>
-                    🔹 LSTM-CNN model for Vehicle Longitudinal Motion Predictor
-                </a>
-            </div>
-            <div class="project-card">
-                <a href="https://giovannilucente.github.io/portfolio/reinforcement_learning_autonomous_driving/index.html">
-                    <div class="image-container">
-                        <img src="media/Schema.png" alt="Reinforcement Learning">
-                    </div>
-                    🔹 Reinforcement Learning for Autonomous Driving
-                </a>
-            </div>
-            <div class="project-card">
-                <a href="https://giovannilucente.github.io/portfolio/bayesian_approach_prior_mixed_strategy_nash_equilibrium/index.html">
-                    <div class="image-container">
-                        <img src="media/bayesian_scenario1.png" alt="Bayesian Approach for Vehicle Intention Prediction">
-                    </div>
-                    🔹 Bayesian Approach with prior Mixed-Strategy Nash Equilibrium for Vehicle Intention Prediction
-                </a>
-            </div>
-            <div class="project-card">
-                <a href="https://giovannilucente.github.io/portfolio/cooperative_cruise_control/index.html">
-                    <div class="image-container">
-                        <img src="media/cooperative_cruise_control.jpg" alt="Cooperative Cruise Control">
-                    </div>
-                    🔹 Decentralized Platoon Management and Cooperative Cruise Control of Autonomous Cars with Manoeuvre Coordination Message
-                </a>
-            </div>
-            <div class="project-card">
-                <a href="https://giovannilucente.github.io/portfolio/adore/index.html">
-                    <div class="image-container">
-                        <img src="media/adore_picture.jpg" alt="ADORe">
-                    </div>
-                    🔹 ADORe: Automated Driving Open Research
-                </a>
-            </div>
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <div class="list-heading">
+            <h3>Ph.D. in Mechanical Engineering</h3>
+            <p class="list-date">2023 ─ 2025</p>
+          </div>
+          <p>Technische Universität Berlin</p>
+        </li>
+        <li>
+          <div class="list-heading">
+            <h3>M.Sc. in Mechanical Engineering</h3>
+            <p class="list-date">2017 ─ 2020</p>
+          </div>
+          <p>Politecnico di Milano</p>
+        </li>
+        <li>
+          <div class="list-heading">
+            <h3>B.Sc. in Mechanical Engineering</h3>
+            <p class="list-date">2014 ─ 2017</p>
+          </div>
+          <p>Politecnico di Milano</p>
+        </li>
+      </ul>
+      <h2>Work Experience</h2>
+      <ul>
+        <li>
+          <div class="list-heading">
+            <h3>Research Scientist / Software Developer</h3>
+            <p class="list-date">2021 ─ Present</p>
+          </div>
+          <p>DLR (German Aerospace Center)</p>
+        </li>
+        <li>
+          <div class="list-heading">
+            <h3>Advanced Manufacturing Engineer</h3>
+            <p class="list-date">2020 ─ 2021</p>
+          </div>
+          <p>Central Manufacturing, Marelli</p>
+        </li>
+        <li>
+          <div class="list-heading">
+            <h3>Mechatronics Testing Engineer</h3>
+            <p class="list-date">2019 ─ 2020</p>
+          </div>
+          <p>Advanced R&D, Brembo</p>
+        </li>
+      </ul>
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <div class="image-container">
+            <img src="media/Congested_Intersection.png" alt="Dynamic Game" />
+          </div>
+          <h3>
+            <a href="/dynamic_game_trajectory_planner/index.html">
+              🔹 Dynamic Game-Theoretic Trajectory Planner
+            </a>
+          </h3>
         </div>
+        <div class="project-card">
+          <div class="image-container">
+            <img src="media/2_21_output.png" alt="Diffusion Model" />
+          </div>
+          <h3>
+            <a href="/generative_ai_trajectory_prediction/index.html">
+              🔹 Generative AI for Trajectory Prediction
+            </a>
+          </h3>
+        </div>
+        <div class="project-card">
+          <div class="image-container">
+            <img src="media/ex3.png" alt="LSTM-CNN" />
+          </div>
+          <h3>
+            <a href="/LSTM_CNN_vehicle_speed_predictor/index.html">
+              🔹 LSTM-CNN model for Vehicle Longitudinal Motion Predictor
+            </a>
+          </h3>
+        </div>
+        <div class="project-card">
+          <div class="image-container">
+            <img src="media/Schema.png" alt="Reinforcement Learning" />
+          </div>
+          <h3>
+            <a href="/reinforcement_learning_autonomous_driving/index.html">
+              🔹 Reinforcement Learning for Autonomous Driving
+            </a>
+          </h3>
+        </div>
+        <div class="project-card">
+          <div class="image-container">
+            <img
+              src="media/bayesian_scenario1.png"
+              alt="Bayesian Approach for Vehicle Intention Prediction"
+            />
+          </div>
+          <h3>
+            <a
+              href="/bayesian_approach_prior_mixed_strategy_nash_equilibrium/index.html"
+            >
+              🔹 Bayesian Approach with prior Mixed-Strategy Nash Equilibrium
+              for Vehicle Intention Prediction
+            </a>
+          </h3>
+        </div>
+        <div class="project-card">
+          <div class="image-container">
+            <img
+              src="media/cooperative_cruise_control.jpg"
+              alt="Cooperative Cruise Control"
+            />
+          </div>
+          <h3>
+            <a href="/cooperative_cruise_control/index.html">
+              🔹 Decentralized Platoon Management and Cooperative Cruise Control
+              of Autonomous Cars with Manoeuvre Coordination Message
+            </a>
+          </h3>
+        </div>
+        <div class="project-card">
+          <div class="image-container">
+            <img src="media/adore_picture.jpg" alt="ADORe" />
+          </div>
+          <h3>
+            <a href="/portfolio/adore/index.html">
+              🔹 ADORe: Automated Driving Open Research
+            </a>
+          </h3>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
+
