@@ -16,11 +16,11 @@ For detailed information about the code, please refer to the [GitHub repository]
 ## 2. Generative AI for Trajectory Prediction
 This project is currently in progress.
 This project focuses on training a model to predict vehicle trajectories. The model takes an input image representing the trajectory over the past second and generates an output image forecasting the trajectories for the next second within the traffic scenario.
-For more details, visit the [project page](https://giovannilucente.github.io/portfolio/generative_ai_trajectory_prediction/index.html) and the [GitHub repository](https://github.com/giovannilucente/portfolio/tree/main/generative_ai_trajectory_prediction).
+For more details, visit the [project page](https://giovannilucente.github.io/generative_AI_trajectory_predictor/index.html) and the [GitHub repository](https://github.com/giovannilucente/generative_AI_trajectory_predictor/tree/main).
 This project is conducted in collaboration with other colleagues from DLR.
 <p align="center">
-  <img src="media/2_21_ground_truth.png" alt="Congested Intersection Image" width="45%"/>
-  <img src="media/2_21_output.png" alt="Overtaking" width="45%"/>
+  <img src="media/2_21_ground_truth.png" alt="truth" width="45%"/>
+  <img src="media/2_21_output.png" alt="prediction" width="45%"/>
 </p>
 Ground truth and predicted trajectories example.
 
