@@ -13,14 +13,14 @@ For detailed information about the code, please refer to the [GitHub repository]
   <img src="media/Overtaking.png" alt="Overtaking" width="45%"/>
 </p>
 
-## 2. Generative AI for Trajectory Prediction
+## 2. Generative AI for BEV occupancy Prediction
 This project is currently in progress.
-This project focuses on training a model to predict vehicle trajectories. The model takes an input image representing the trajectory over the past second and generates an output image forecasting the trajectories for the next second within the traffic scenario.
-For more details, visit the [project page](https://giovannilucente.github.io/generative_AI_trajectory_predictor/index.html) and the [GitHub repository](https://github.com/giovannilucente/generative_AI_trajectory_predictor/tree/main).
+This project focuses on training a generative autoregressive model to predict BEV occupancy. The model takes as input a BEV frame of the traffic scenario and generates the next frame.
+For more details, visit the [project page](https://giovannilucente.github.io/autoregressive_BEV_generator/index.html) and the [GitHub repository](https://github.com/giovannilucente/autoregressive_BEV_generator/tree/main).
 This project is conducted in collaboration with other colleagues from DLR.
 <p align="center">
-  <img src="media/2_21_ground_truth.png" alt="truth" width="45%"/>
-  <img src="media/2_21_output.png" alt="prediction" width="45%"/>
+  <img src="media/ground_truth.gif" alt="truth" width="45%"/>
+  <img src="media/prediction.gif" alt="prediction" width="45%"/>
 </p>
 Ground truth and predicted trajectories example.
 
